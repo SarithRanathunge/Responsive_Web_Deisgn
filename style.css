@@ -3,7 +3,7 @@ body {
 }
 
 .main {
-    background-image: url(main_pic.jpg);
+    background-image: url(smile.jpg);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -22,12 +22,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-.logo {
-    width: 20%;
-    height: 90%;
-    border-right: 3px solid rgba(255, 255, 255, 0.852);
+    position: fixed;
+    z-index: 1000;
 }
 
 .tool {
@@ -43,22 +39,20 @@ body {
     width: 150px;
     height: 50px;
     margin-top: -5px;
-    color: white;
+    color: #fff;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: bold;
     font-family: Arial;
     background-color: transparent;
-    border-color: transparent;
-    border-radius: 25px;
-    border-width: 3px;
+    border: none;
     transition: 1s;
 }
 
 .tool button:hover {
     transition: 0.5s;
     cursor: pointer;
-    font-size: 25px;
-    /* background-color: rgba(74, 66, 241, 0.674); */
+    font-size: 24px;
+    color: rgba(92, 92, 92, 0.942);
     border-radius: 25px;
     border-width: 3px;
 }
@@ -68,37 +62,27 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 60px;
-    margin-left: 65px;
 }
 
-.main-text p {
-    /* background-color: rgba(12, 178, 233, 0.885); */
-    width: 80%;
-
+.main-text p, .online {
+    width: 50%;
+    margin-left: 50px;
 }
 
 .bold-text {
     margin-top: -25px;
-    font-size: 65px;
+    font-size: 52pt;
     font-weight: bold;
     font-family: Arial;
-    color: rgba(63, 63, 63, 0.615);
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    letter-spacing: 5px;
-    line-height: 65px;
+    color: rgba(92, 92, 92, 0.942);
 }
 
 .normal-text {
-    /* background-color: rgba(12, 178, 233, 0.885); */
     width: 645px !important;
-    font-size: 25px;
+    font-size: 24pt;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: -50px;
     color: rgba(83, 83, 83, 0.615);
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
 }
 
 .online {
@@ -111,11 +95,10 @@ body {
     height: 100%;
     font-size: 25px;
     color: white;
-    border-radius: 19px;
-    border-width: 2px;
-    border-color: transparent;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
     background-color: rgba(12, 178, 233, 0.885);
-    letter-spacing: 1px;
     transform: scale(1);
     transition: 0.9s;
 }
@@ -123,9 +106,8 @@ body {
 .online button:hover {
     cursor: pointer;
     transition: 0.9s;
-    font-size: 28px;
-    transform: scale(1.09) translateX(10px);
-    transform: scale(1.09) translateX(-5px);
+    font-size: 27px;
+    font-weight: bold;
     background-color: white;
     color: rgba(12, 178, 233, 0.885);
 }
@@ -133,67 +115,62 @@ body {
 .text-a {
     background-color: rgba(12, 178, 233, 0.885);
     width: 100%;
-    height: 650px;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.ta1 {
+.ta1, .ta2{
     width: 40%;
-    height: 550px;
+    height: 80%;
+}
+
+.ta1 {
+    border: none;
     border-radius: 20px;
-    background-image: url(photo.jpg);
+    background-image: url(dentist-with-smile.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 40px;
-    box-shadow: 0px 0px 10px 5px rgba(132, 132, 132, 0.79);
+    box-shadow: 0px 0px 10px 5px rgba(132, 132, 132, 0.449);
 }
 
 .ta2 {
-    /* background-color: white; */
-    width: 45%;
-    height: 550px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 40px;
-    margin-left: 20px;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .tap1 {
-    margin: 20px;
-    font-size: 45px;
+    margin-top: -1px;
+    font-size: 45px; 
     font-family: Arial;
 }
 
 .tap2 {
-    margin: 20px;
+    margin-top: -8px;
     font-size: 25px;
-    width: 700px;
+    width: 100%;
     font-style: italic;
 }
 
 .text-b {
     width: 100%;
-    height: 800px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 
-.tb1 {
+.tb1, .tc1 {
     width: 100%;
-    height: 60px;
+    height: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,20 +179,20 @@ body {
 
 .tb1 p,
 .tc1 p {
-    padding-top: 20px;
-    font-size: 60px;
+    font-family: Arial;
+    font-size: 45px;
 }
 
 .tb2 {
     width: 100%;
-    height: 740px;
+    height: 90%;
     display: flex;
     flex-direction: column;
 }
 
 .tb2d {
     width: 100%;
-    height: 350px;
+    height: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -224,35 +201,23 @@ body {
 
 .tb2d div {
     background-color: rgba(12, 178, 233, 0.885);
-    width: 475px;
-    height: 325px;
-    margin: 5px;
-    margin-top: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 450px;
+    height: 320px;
+    border: none;
     border-radius: 10px;
 }
 
 .tb2d div:hover,
 tb2d div:focus {
-    width: 480px;
-    height: 330px;
-    box-shadow: 0px 0px 10px 5px rgba(132, 132, 132, 0.79);
+    width: 455px;
+    height: 325px;
+    box-shadow: 0px 0px 10px 5px rgba(132, 132, 132, 0.449);
 }
 
 .text-c {
     background-color: rgba(12, 178, 233, 0.885);
     width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.tc1 {
-    width: 100%;
-    height: 60px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -261,7 +226,7 @@ tb2d div:focus {
 
 .tc2 {
     width: 100%;
-    height: 540px;
+    height: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -271,21 +236,22 @@ tb2d div:focus {
 .tc2 div {
     background-color: white;
     width: 480px;
-    height: 500px;
+    height: 95%;
+    border: none;
     border-radius: 10px;
 }
 
 .tc2 div:hover,
 tc2 div:focus {
     width: 490px;
-    height: 510px;
-    box-shadow: 0px 0px 10px 5px rgba(132, 132, 132, 0.79);
+    height: 96%;
+    box-shadow: 0px 0px 10px 5px rgba(132, 132, 132, 0.449);
 }
 
 .footer {
     background-color: rgba(132, 132, 132, 0.79);
     width: 100%;
-    height: 250px;
+    height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,26 +259,23 @@ tc2 div:focus {
 
 .footer-nav {
     width: 100%;
-    height: 85%;
-    /* margin-left: 15px; */
+    height: 63%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-bottom-width: 5px;
-    border-bottom-color: rgb(255, 255, 255);
-
 }
 
 .divider {
     width: 97%;
     height: 0.7%;
     background-color: rgba(215, 215, 215, 0.874);
+    border: none;
     border-radius: 5px;
 }
 
 .bar {
     width: 100%;
-    height: 14.3%;
+    height: 33%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -320,7 +283,7 @@ tc2 div:focus {
 }
 
 .bar p {
-    font-size: 25px;
+    font-size: 18px;
     font-family: Arial;
 }
 
@@ -337,6 +300,8 @@ tc2 div:focus {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        position: relative;
+        overflow: hidden;
     }
 
     .logo {
